@@ -24,5 +24,15 @@ namespace RootDrivingHistoryKATA.tests
 
             Assert.AreEqual("Peter: 17 miles @ 37 mph", drivingHistory.ToString());
         }
+
+        [TestMethod]
+        public void Test003_GetOutputDataUsingSecondTestDataFileUsingADifferentDriver()
+        {
+            DrivingHistory drivingHistory = new DrivingHistory();
+
+            string input = drivingHistory.GetInputData("TestData002.txt");
+
+            Assert.AreEqual("Samantha: 63 miles @ 42 mph", drivingHistory.ToString());
+        }
     }
 }

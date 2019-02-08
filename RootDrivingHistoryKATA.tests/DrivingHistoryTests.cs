@@ -24,5 +24,15 @@ namespace RootDrivingHistoryKATA.tests
 
             Assert.AreEqual("Peter: 0 miles", drivingHistory.ToString(input));
         }
+
+        [TestMethod]
+        public void Test003_GetOutputDataForTwoDriversWithoutDrivingData()
+        {
+            DrivingHistory drivingHistory = new DrivingHistory();
+
+            string input = drivingHistory.GetInputData("TestData004.txt");
+
+            Assert.AreEqual("Peter: 0 miles\nSamantha: 0 miles", drivingHistory.ToString(input));
+        }
     }
 }

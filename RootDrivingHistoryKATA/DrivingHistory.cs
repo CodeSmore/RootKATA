@@ -38,25 +38,45 @@ namespace RootDrivingHistoryKATA
 
         public string ToString(string input)
         {
-            Driver driver;
+            string result = "";
+            List<Driver> drivers = new List<Driver>();
 
-            string name = "";
+            List<string> wordsFromInput = new List<string>();
+            string a = "";
 
             foreach (char character in input)
             {
-                if (character == ' ')
+                if (character != ' ')
                 {
-                    name = "";
+                    a += character;
                 }
                 else
                 {
-                    name += character;
+                    wordsFromInput.Add(a);
+                    a = "";
+                }
+            }
+            wordsFromInput.Add(a);
+
+            for (int i = 0; i < wordsFromInput.Count; i += 2)
+            {
+                if (wordsFromInput[i] == "Driver")
+                {
+                    drivers.Add(new Driver(wordsFromInput[i+1]));
                 }
             }
 
-            driver = new Driver(name);
+            foreach (Driver driver in drivers)
+            {
+                if (result != "")
+                {
+                    result += '\n';
+                }
 
-            return driver.ToString();
+                result += driver.ToString();
+            }
+            
+            return result;
         }
     }
 }

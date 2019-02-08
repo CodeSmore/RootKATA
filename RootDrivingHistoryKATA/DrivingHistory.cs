@@ -9,8 +9,6 @@ namespace RootDrivingHistoryKATA
     {
         public string GetInputData(string fileName)
         {
-            // C:\Users\codes\source\repos\KATAs\KATAs.Data
-
             string fileContentsAsString = "";
 
             string workingDirectory = Directory.GetCurrentDirectory();
@@ -38,33 +36,12 @@ namespace RootDrivingHistoryKATA
 
         public string ToString(string input)
         {
+            return CombineDriverToStringsToSingleOutputString(GetDriversFromInput(input));
+        }
+
+        string CombineDriverToStringsToSingleOutputString(List<Driver> drivers)
+        {
             string result = "";
-            List<Driver> drivers = new List<Driver>();
-
-            List<string> wordsFromInput = new List<string>();
-            string a = "";
-
-            foreach (char character in input)
-            {
-                if (character != ' ')
-                {
-                    a += character;
-                }
-                else
-                {
-                    wordsFromInput.Add(a);
-                    a = "";
-                }
-            }
-            wordsFromInput.Add(a);
-
-            for (int i = 0; i < wordsFromInput.Count; i += 2)
-            {
-                if (wordsFromInput[i] == "Driver")
-                {
-                    drivers.Add(new Driver(wordsFromInput[i+1]));
-                }
-            }
 
             foreach (Driver driver in drivers)
             {
@@ -75,7 +52,45 @@ namespace RootDrivingHistoryKATA
 
                 result += driver.ToString();
             }
-            
+
+            return result;
+        }
+
+        List<Driver> GetDriversFromInput(string input)
+        {
+            List<Driver> drivers = new List<Driver>();
+            List<string> wordsFromInput = GetEachWordFromInput(input);
+
+            for (int i = 0; i < wordsFromInput.Count; i += 2)
+            {
+                if (wordsFromInput[i] == "Driver")
+                {
+                    drivers.Add(new Driver(wordsFromInput[i + 1]));
+                }
+            }
+
+            return drivers;
+        }
+
+        List<string> GetEachWordFromInput(string input)
+        {
+            List<string> result = new List<string>();
+            string word = "";
+
+            foreach (char character in input)
+            {
+                if (character != ' ')
+                {
+                    word += character;
+                }
+                else
+                {
+                    result.Add(word);
+                    word = "";
+                }
+            }
+            result.Add(word);
+
             return result;
         }
     }

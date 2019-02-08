@@ -67,6 +67,36 @@ namespace RootDrivingHistoryKATA
                 {
                     drivers.Add(new Driver(wordsFromInput[i + 1]));
                 }
+
+                if (wordsFromInput[i] == "Trip")
+                {
+                    string name = wordsFromInput[i + 1];
+
+                    // get start time
+                    float startHours;
+                    int hour = int.Parse(wordsFromInput[i + 2].Substring(0, 2));
+                    int minutes = int.Parse(wordsFromInput[i + 2].Substring(3));
+
+                    startHours = hour + (float)minutes / 60;
+
+                    // get end time
+                    float endHours;
+                    hour = int.Parse(wordsFromInput[i + 3].Substring(0, 2));
+                    minutes = int.Parse(wordsFromInput[i + 3].Substring(3));
+
+                    endHours = hour + (float)minutes / 60;
+
+                    float totalHours = endHours - startHours;
+                    float milesDriven = float.Parse(wordsFromInput[i + 4]);
+
+                    foreach (Driver driver in drivers)
+                    {
+                        if (name == driver.Name)
+                        {
+                            driver.AddTripData(milesDriven, milesDriven / totalHours);
+                        }
+                    }
+                }
             }
 
             return drivers;

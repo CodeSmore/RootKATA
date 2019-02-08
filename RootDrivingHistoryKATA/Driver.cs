@@ -6,9 +6,9 @@ namespace RootDrivingHistoryKATA
 {
     public class Driver
     {
-        string Name { get; }
-        int MilesDriven { get; }
-        int AverageSpeedInMPH { get; }
+        public string Name { get; }
+        private float MilesDriven { get; set; }
+        private float AverageSpeedInMPH { get; set; }
 
         public Driver(string name)
         {
@@ -16,9 +16,24 @@ namespace RootDrivingHistoryKATA
             MilesDriven = 0;
         }
 
+        public void AddTripData(float milesDriven, float avgSpeed)
+        {
+            MilesDriven = milesDriven;
+            AverageSpeedInMPH = avgSpeed;
+        }
+
         public override string ToString()
         {
-            return Name + ": " + MilesDriven + " miles" ;
+            string returnString = "";
+
+            returnString += Name + ": " + (int)MilesDriven + " miles";
+
+            if (MilesDriven > 0)
+            {
+                returnString += " @ " + Math.Round(AverageSpeedInMPH) + " mph";
+            }
+
+            return  returnString;
         }
     }
 }

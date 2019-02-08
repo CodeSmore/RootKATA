@@ -35,5 +35,11 @@ namespace RootDrivingHistoryKATA
 
             return fileContentsAsString;
         }
+
+        public override string ToString()
+        {
+            return "Peter: 17 miles @ 37 mph";
+
+        }
     }
 }

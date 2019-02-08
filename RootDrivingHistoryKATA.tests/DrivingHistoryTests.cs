@@ -16,23 +16,13 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test002_GetOutputData()
+        public void Test002_GetOutputDataForOneDriverWithoutDrivingData()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
-            string input = drivingHistory.GetInputData("TestData001.txt");
+            string input = drivingHistory.GetInputData("TestData003.txt");
 
             Assert.AreEqual("Peter: 0 miles", drivingHistory.ToString(input));
         }
-
-        //[TestMethod]
-        //public void Test003_GetOutputDataUsingSecondTestDataFileUsingADifferentDriver()
-        //{
-        //    DrivingHistory drivingHistory = new DrivingHistory();
-
-        //    string input = drivingHistory.GetInputData("TestData002.txt");
-
-        //    Assert.AreEqual("Samantha: 63 miles @ 42 mph", drivingHistory.ToString(input));
-        //}
     }
 }

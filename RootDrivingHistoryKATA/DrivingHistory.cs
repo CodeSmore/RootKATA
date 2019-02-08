@@ -41,11 +41,20 @@ namespace RootDrivingHistoryKATA
             Driver driver;
 
             string name = "";
-            int miles = 0;
-            int speed = 0;
-           
 
-            driver = new Driver(name, miles, speed);
+            foreach (char character in input)
+            {
+                if (character == ' ')
+                {
+                    name = "";
+                }
+                else
+                {
+                    name += character;
+                }
+            }
+
+            driver = new Driver(name);
 
             return driver.ToString();
         }

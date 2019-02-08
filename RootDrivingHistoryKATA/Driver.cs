@@ -10,16 +10,15 @@ namespace RootDrivingHistoryKATA
         int MilesDriven { get; }
         int AverageSpeedInMPH { get; }
 
-        public Driver(string name, int milesDriven, int avgSpeed)
+        public Driver(string name)
         {
             Name = name;
-            MilesDriven = milesDriven;
-            AverageSpeedInMPH = avgSpeed;
+            MilesDriven = 0;
         }
 
         public override string ToString()
         {
-            return Name + ": " + MilesDriven + " miles @ " + AverageSpeedInMPH + " mph";
+            return Name + ": " + MilesDriven + " miles" ;
         }
     }
 }

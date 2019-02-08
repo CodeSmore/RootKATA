@@ -5841,11 +5841,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests.csproj",
+      "projectUniqueName": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests.csproj",
       "projectName": "RootDrivingHistoryKATA.tests",
-      "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests.csproj",
+      "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests.csproj",
       "packagesPath": "C:\\Users\\codes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA.tests\\obj\\",
+      "outputPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5864,8 +5864,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj": {
-              "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj"
+            "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj": {
+              "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj"
             }
           }
         }

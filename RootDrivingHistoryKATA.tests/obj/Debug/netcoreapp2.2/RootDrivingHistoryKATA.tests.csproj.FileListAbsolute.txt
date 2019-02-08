@@ -1,0 +1,17 @@
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.deps.json
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.runtimeconfig.json
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.runtimeconfig.dev.json
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.pdb
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.pdb
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.csprojAssemblyReference.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.csproj.CoreCompileInputs.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.AssemblyInfoInputs.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.AssemblyInfo.cs
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.csproj.CopyComplete
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA.tests\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.tests.pdb

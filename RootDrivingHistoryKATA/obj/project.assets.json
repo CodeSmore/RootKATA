@@ -693,11 +693,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj",
+      "projectUniqueName": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj",
       "projectName": "RootDrivingHistoryKATA",
-      "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj",
+      "projectPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA.csproj",
       "packagesPath": "C:\\Users\\codes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA.tests\\RootDrivingHistoryKATA\\obj\\",
+      "outputPath": "C:\\Users\\codes\\source\\repos\\RootDrivingHistoryKATA\\RootDrivingHistoryKATA\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -1,0 +1,9 @@
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.deps.json
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\bin\Debug\netcoreapp2.2\RootDrivingHistoryKATA.pdb
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.csprojAssemblyReference.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.csproj.CoreCompileInputs.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.AssemblyInfoInputs.cache
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.AssemblyInfo.cs
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.dll
+C:\Users\codes\source\repos\RootDrivingHistoryKATA\RootDrivingHistoryKATA\obj\Debug\netcoreapp2.2\RootDrivingHistoryKATA.pdb

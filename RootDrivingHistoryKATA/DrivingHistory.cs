@@ -36,10 +36,18 @@ namespace RootDrivingHistoryKATA
             return fileContentsAsString;
         }
 
-        public override string ToString()
+        public string ToString(string input)
         {
-            return "Peter: 17 miles @ 37 mph";
+            Driver driver;
 
+            string name = "";
+            int miles = 0;
+            int speed = 0;
+           
+
+            driver = new Driver(name, miles, speed);
+
+            return driver.ToString();
         }
     }
 }

@@ -36,7 +36,7 @@ namespace RootDrivingHistoryKATA
 
         public string ToString(string input)
         {
-            return CombineDriverToStringsToSingleOutputString(GetDriversFromInput(input));
+            return CombineDriverToStringsToSingleOutputString(ExtractDrivingHistoryFromInput(input));
         }
 
         string CombineDriverToStringsToSingleOutputString(List<Driver> drivers)
@@ -56,7 +56,7 @@ namespace RootDrivingHistoryKATA
             return result;
         }
 
-        List<Driver> GetDriversFromInput(string input)
+        List<Driver> ExtractDrivingHistoryFromInput(string input)
         {
             List<Driver> drivers = new List<Driver>();
             List<string> wordsFromInput = GetEachWordFromInput(input);
@@ -70,36 +70,48 @@ namespace RootDrivingHistoryKATA
 
                 if (wordsFromInput[i] == "Trip")
                 {
-                    string name = wordsFromInput[i + 1];
+                    Trip trip = ConvertDataToTrip(wordsFromInput, i);
+                    
 
-                    // get start time
-                    float startHours;
-                    int hour = int.Parse(wordsFromInput[i + 2].Substring(0, 2));
-                    int minutes = int.Parse(wordsFromInput[i + 2].Substring(3));
-
-                    startHours = hour + (float)minutes / 60;
-
-                    // get end time
-                    float endHours;
-                    hour = int.Parse(wordsFromInput[i + 3].Substring(0, 2));
-                    minutes = int.Parse(wordsFromInput[i + 3].Substring(3));
-
-                    endHours = hour + (float)minutes / 60;
-
-                    float totalHours = endHours - startHours;
-                    float milesDriven = float.Parse(wordsFromInput[i + 4]);
-
+                    // store trip data
                     foreach (Driver driver in drivers)
                     {
-                        if (name == driver.Name)
+                        if (trip.DriverName == driver.Name)
                         {
-                            driver.AddTripData(milesDriven, milesDriven / totalHours);
+                            driver.AddTripData(trip.DistanceInMiles, trip.AverageSpeedInMPH);
                         }
                     }
                 }
             }
 
             return drivers;
+        }
+
+        Trip ConvertDataToTrip(List<string> wordsFromInput, int index)
+        {
+            // extract trip data
+            string name = wordsFromInput[index + 1];
+
+            // get start time
+            float startHours;
+            int hour = int.Parse(wordsFromInput[index + 2].Substring(0, 2));
+            int minutes = int.Parse(wordsFromInput[index + 2].Substring(3));
+
+            startHours = hour + (float)minutes / 60;
+
+            // get end time
+            float endHours;
+            hour = int.Parse(wordsFromInput[index + 3].Substring(0, 2));
+            minutes = int.Parse(wordsFromInput[index + 3].Substring(3));
+
+            endHours = hour + (float)minutes / 60;
+
+            float totalHours = endHours - startHours;
+            float milesDriven = float.Parse(wordsFromInput[index + 4]);
+
+            float averageSpeed = milesDriven / totalHours;
+
+            return new Trip(name, averageSpeed, milesDriven);
         }
 
         List<string> GetEachWordFromInput(string input)

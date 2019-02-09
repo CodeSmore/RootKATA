@@ -2,6 +2,14 @@
 
 A KATA provided by Root Insurance that takes in driver and trip data, then displays the data for each driver in total miles traveled and average speed
 
+## Running Tests
+
+To easily run the tests from the command prompt, simply
+
+"cd RootDrivingHistoryKata"
+then input
+"dotnet test"
+
 ## Solving the Problem
 
 NOTE: Apologies if this is too expressive. I know how dry these can be and wanted to make it easier to swallow. Feel free to express any dissatisfaction in the form a phone call, email, or a handwritten letter...

@@ -110,7 +110,7 @@ namespace RootDrivingHistoryKATA
 
             float totalHours = endHours - startHours;
             float milesDriven = float.Parse(wordsFromInput[index + 4]);
-
+            
             return new Trip(name, totalHours, milesDriven);
         }
 

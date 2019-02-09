@@ -12,6 +12,12 @@ namespace RootDrivingHistoryKATA
 
         public Trip(string driverName, float timeInHours, float distanceInMiles)
         {
+            if (distanceInMiles / timeInHours > 100 || distanceInMiles / timeInHours < 5)
+            {
+                timeInHours = 0;
+                distanceInMiles = 0;
+            }
+
             DriverName = driverName;
             TimeInHours = timeInHours;
             DistanceInMiles = distanceInMiles;

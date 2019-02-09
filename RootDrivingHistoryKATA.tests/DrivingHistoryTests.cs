@@ -53,7 +53,6 @@ namespace RootDrivingHistoryKATA.tests
             string input = drivingHistory.GetInputData("TestData002.txt");
 
             Assert.AreEqual("Samantha: 63 miles @ 42 mph\nPeter: 17 miles @ 35 mph", drivingHistory.ToString(input));
-
         }
     }
 }

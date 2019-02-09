@@ -7,7 +7,7 @@ namespace RootDrivingHistoryKATA
     public class Driver
     {
         public string Name { get; }
-        private float MilesDriven { get; set; }
+        public float MilesDriven { get; set; }
         private float AverageSpeedInMPH { get; set; }
 
         public Driver(string name)
@@ -26,7 +26,7 @@ namespace RootDrivingHistoryKATA
         {
             string returnString = "";
 
-            returnString += Name + ": " + (int)MilesDriven + " miles";
+            returnString += Name + ": " + Math.Round(MilesDriven) + " miles";
 
             if (MilesDriven > 0)
             {

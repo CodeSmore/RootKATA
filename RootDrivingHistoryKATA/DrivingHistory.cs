@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Text;
 
 namespace RootDrivingHistoryKATA
@@ -42,8 +43,9 @@ namespace RootDrivingHistoryKATA
         string CombineDriverToStringsToSingleOutputString(List<Driver> drivers)
         {
             string result = "";
+            List<Driver> sortedDriversList = drivers.OrderByDescending(o => o.MilesDriven).ToList();
 
-            foreach (Driver driver in drivers)
+            foreach (Driver driver in sortedDriversList)
             {
                 if (result != "")
                 {
@@ -61,7 +63,7 @@ namespace RootDrivingHistoryKATA
             List<Driver> drivers = new List<Driver>();
             List<string> wordsFromInput = GetEachWordFromInput(input);
 
-            for (int i = 0; i < wordsFromInput.Count; i += 2)
+            for (int i = 0; i < wordsFromInput.Count; ++i)
             {
                 if (wordsFromInput[i] == "Driver")
                 {

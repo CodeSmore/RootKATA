@@ -6,7 +6,7 @@ namespace RootDrivingHistoryKATA.tests
     public class DrivingHistoryTests
     {
         [TestMethod]
-        public void Test001_GetTestDataFromInputFile()
+        public void Test001_GivenDrivingHistoryInput_WhenInputIsStoredInTxtFile_ThenGetInputDataAsSingleString()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -16,7 +16,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test002_GetOutputDataForOneDriverWithoutDrivingData()
+        public void Test002_GivenDrivingHistory_WhenInputIncludesOneDriverWithoutTripData_ThenGetOutputDataWithZeroMilesAndNoAverageSpeedIndicated()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -26,7 +26,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test003_GetOutputDataForTwoDriversWithoutDrivingData()
+        public void Test003_GivenDrivingHistory_WhenInputIncludesTwoDriversWithoutTripData_ThenGetOutputDataForEachDriverWithZeroMilesAndNoAverageSpeedIndicated()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -36,7 +36,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test004_GetOutputDataForOneDriverWithDrivingData()
+        public void Test004_GivenDrivingHistory_WhenInputIncludesOneDriverWithOneTrip_ThenGetOutputDataIncludingTotalDistanceAndAverageSpeed()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -46,7 +46,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test005_GetOutputDataForTwoDriversEachWithOneTrip()
+        public void Test005_GivenDrivingHistory_WhenInputIncludesTwoDriversEachWithOneTrip_ThenGetOutputDataIncludingTotalDistanceAndAverageSpeedForEachDriver()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -56,7 +56,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test006_GetOutputDataForTwoDriversEachWithTwoTrips()
+        public void Test006_GivenDrivingHistory_WhenInputIncludesTwoDriversEachWithTwoTrips_ThenGetOutputDataIncludingTotalDistanceAndAverageSpeedForEachDriver()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -66,7 +66,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test007_GivenDrivingHistoryWhenTripAverageSpeedFallsBelow5mphThenExcludeTripFromResults()
+        public void Test007_GivenDrivingHistory_WhenTripAverageSpeedFallsBelow5mph_ThenExcludeTripFromResults()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 
@@ -76,7 +76,7 @@ namespace RootDrivingHistoryKATA.tests
         }
 
         [TestMethod]
-        public void Test008_GivenDrivingHistoryWhenTripAverageSpeedExceeds100mphThenExcludeTripFromResults()
+        public void Test008_GivenDrivingHistory_WhenTripAverageSpeedExceeds100mph_ThenExcludeTripFromResults()
         {
             DrivingHistory drivingHistory = new DrivingHistory();
 

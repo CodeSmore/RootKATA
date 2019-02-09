@@ -80,7 +80,7 @@ namespace RootDrivingHistoryKATA
                     {
                         if (trip.DriverName == driver.Name)
                         {
-                            driver.AddTripData(trip.DistanceInMiles, trip.AverageSpeedInMPH);
+                            driver.AddTripData(trip.DistanceInMiles, trip.TimeInHours);
                         }
                     }
                 }
@@ -111,9 +111,7 @@ namespace RootDrivingHistoryKATA
             float totalHours = endHours - startHours;
             float milesDriven = float.Parse(wordsFromInput[index + 4]);
 
-            float averageSpeed = milesDriven / totalHours;
-
-            return new Trip(name, averageSpeed, milesDriven);
+            return new Trip(name, totalHours, milesDriven);
         }
 
         List<string> GetEachWordFromInput(string input)

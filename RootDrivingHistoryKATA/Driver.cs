@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RootDrivingHistoryKATA
 {
@@ -8,7 +6,7 @@ namespace RootDrivingHistoryKATA
     {
         public string Name { get; }
         public float MilesDriven { get; set; }
-        private float AverageSpeedInMPH { get; set; }
+        private float HoursDriven { get; set; }
 
         public Driver(string name)
         {
@@ -16,10 +14,10 @@ namespace RootDrivingHistoryKATA
             MilesDriven = 0;
         }
 
-        public void AddTripData(float milesDriven, float avgSpeed)
+        public void AddTripData(float milesDriven, float hoursDriven)
         {
-            MilesDriven = milesDriven;
-            AverageSpeedInMPH = avgSpeed;
+            MilesDriven += milesDriven;
+            HoursDriven += hoursDriven;
         }
 
         public override string ToString()
@@ -30,7 +28,7 @@ namespace RootDrivingHistoryKATA
 
             if (MilesDriven > 0)
             {
-                returnString += " @ " + Math.Round(AverageSpeedInMPH) + " mph";
+                returnString += " @ " + Math.Round(MilesDriven / HoursDriven) + " mph";
             }
 
             return  returnString;

@@ -7,13 +7,13 @@ namespace RootDrivingHistoryKATA
     public class Trip
     {
         public string DriverName { get; set; }
-        public float AverageSpeedInMPH { get; set; }
+        public float TimeInHours { get; set; }
         public float DistanceInMiles { get; set; }
 
-        public Trip(string driverName, float averageSpeedInMPH, float distanceInMiles)
+        public Trip(string driverName, float timeInHours, float distanceInMiles)
         {
             DriverName = driverName;
-            AverageSpeedInMPH = averageSpeedInMPH;
+            TimeInHours = timeInHours;
             DistanceInMiles = distanceInMiles;
         }
     }

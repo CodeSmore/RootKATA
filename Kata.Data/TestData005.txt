@@ -1,0 +1,6 @@
+Driver Peter
+Driver Samantha
+Trip Peter 07:15 07:45 17.3
+Trip Samantha 12:01 13:16 42.0
+Trip Samantha 12:01 13:16 42.0
+Trip Peter 06:12 06:32 21.8

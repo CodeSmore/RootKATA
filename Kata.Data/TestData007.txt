@@ -1,0 +1,3 @@
+Driver Samantha
+Trip Samantha 08:01 08:04 16.5
+Trip Samantha 12:01 13:16 42.0

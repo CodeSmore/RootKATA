@@ -64,5 +64,25 @@ namespace RootDrivingHistoryKATA.tests
 
             Assert.AreEqual("Samantha: 84 miles @ 34 mph\nPeter: 39 miles @ 47 mph", drivingHistory.ToString(input));
         }
+
+        [TestMethod]
+        public void Test007_GivenDrivingHistoryWhenTripAverageSpeedFallsBelow5mphThenExcludeTripFromResults()
+        {
+            DrivingHistory drivingHistory = new DrivingHistory();
+
+            string input = drivingHistory.GetInputData("TestData006.txt");
+
+            Assert.AreEqual("Samantha: 42 miles @ 34 mph", drivingHistory.ToString(input));
+        }
+
+        [TestMethod]
+        public void Test008_GivenDrivingHistoryWhenTripAverageSpeedExceeds100mphThenExcludeTripFromResults()
+        {
+            DrivingHistory drivingHistory = new DrivingHistory();
+
+            string input = drivingHistory.GetInputData("TestData007.txt");
+
+            Assert.AreEqual("Samantha: 42 miles @ 34 mph", drivingHistory.ToString(input));
+        }
     }
 }
